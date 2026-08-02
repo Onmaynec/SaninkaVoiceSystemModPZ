@@ -1,0 +1,61 @@
+name: Publish v0.1.0-alpha
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: github.head_ref == 'agent/release-v0.1.0-alpha'
+    runs-on: ubuntu-latest
+    env:
+      TAG: v0.1.0-alpha
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Validate project
+        run: |
+          python tools/generate_manifest.py
+          python tools/validate_project.py
+
+      - name: Build release assets
+        run: |
+          python tools/package_release.py
+
+      - name: Create tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -f -a "$TAG" -m "Saninka Voice System $TAG"
+          git push origin "refs/tags/$TAG" --force
+
+      - name: Publish GitHub Release
+        run: |
+          ASSETS=(
+            "dist/SaninkaVoiceSystem-${TAG}.zip"
+            "dist/SaninkaVoiceSystem-Source-${TAG}.zip"
+            "dist/SHA256SUMS.txt"
+          )
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release edit "$TAG" \
+              --title "🎙️ Saninka Voice System ${TAG}" \
+              --notes-file RELEASE_NOTES.md \
+              --prerelease
+            gh release upload "$TAG" "${ASSETS[@]}" --clobber
+          else
+            gh release create "$TAG" "${ASSETS[@]}" \
+              --title "🎙️ Saninka Voice System ${TAG}" \
+              --notes-file RELEASE_NOTES.md \
+              --prerelease
+          fi
