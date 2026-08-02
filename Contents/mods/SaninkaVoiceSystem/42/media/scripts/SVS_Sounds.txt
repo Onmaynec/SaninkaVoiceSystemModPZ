@@ -1,0 +1,2859 @@
+module SaninkaVoiceSystem
+{
+    sound SVS_ACTION_FAILED_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ACTION_FAILED_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ACTION_FAILED_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BITTEN_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 14,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BITTEN_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 14,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BITTEN_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 14,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BLEEDING_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BLEEDING_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BLEEDING_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_COUGH_HEAVY_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_COUGH_HEAVY_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_COUGH_HEAVY_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_COUGH_LIGHT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_COUGH_LIGHT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_COUGH_LIGHT_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_SHIVER_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_SHIVER_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_SHIVER_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_SNEEZE_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_SNEEZE_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_SNEEZE_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_VOMIT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_VOMIT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_VOMIT_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_YAWN_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_YAWN_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BODY_YAWN_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BOREDOM_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BOREDOM_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BREATH_HEAVY_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BREATH_HEAVY_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BREATH_HEAVY_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BREATH_LIGHT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BREATH_LIGHT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BREATH_LIGHT_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BREATH_MEDIUM_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BREATH_MEDIUM_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BREATH_MEDIUM_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BREATH_RECOVER_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BREATH_RECOVER_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BREATH_RECOVER_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BUILD_START_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BUILD_START_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_BUILD_START_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_CALL_HEY_NORMAL_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_CALL_HEY_NORMAL_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_CALL_HEY_NORMAL_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_CALL_HEY_SHOUT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_CALL_HEY_SHOUT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_CALL_HEY_SHOUT_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_CALL_PSST_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_CALL_PSST_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_CALL_PSST_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COLD_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COLD_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_DEATH_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_DEATH_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_DEATH_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_FALL_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_FALL_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_FALL_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_HIT_TAKEN_HEAVY_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_HIT_TAKEN_HEAVY_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_HIT_TAKEN_HEAVY_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_HIT_TAKEN_LIGHT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_HIT_TAKEN_LIGHT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_HIT_TAKEN_LIGHT_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_HIT_TAKEN_MEDIUM_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_HIT_TAKEN_MEDIUM_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_HIT_TAKEN_MEDIUM_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_SHOVE_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_SHOVE_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_SHOVE_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_STOMP_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_STOMP_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_STOMP_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_SWING_HEAVY_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_SWING_HEAVY_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_SWING_HEAVY_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_SWING_LIGHT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_SWING_LIGHT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COMBAT_SWING_LIGHT_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 12,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COOKING_START_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COOKING_START_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_COOKING_START_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_CRAFT_START_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_CRAFT_START_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_CRAFT_START_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_DANGER_CLOSE_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_DANGER_CLOSE_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_DANGER_CLOSE_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_DOOR_BREAKING_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_DOOR_BREAKING_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_DOOR_BREAKING_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_DOOR_LOCKED_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_DOOR_LOCKED_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_DOOR_LOCKED_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ENCUMBERED_HEAVY_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ENCUMBERED_HEAVY_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ENCUMBERED_LIGHT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ENCUMBERED_LIGHT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ENTER_VEHICLE_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ENTER_VEHICLE_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ENTER_VEHICLE_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_FATIGUE_HEAVY_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_FATIGUE_HEAVY_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_FATIGUE_LIGHT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_FATIGUE_LIGHT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_HEAT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_HEAT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_HUNGER_HEAVY_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_HUNGER_HEAVY_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_HUNGER_LIGHT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_HUNGER_LIGHT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ITEM_BROKEN_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ITEM_BROKEN_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ITEM_BROKEN_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MEGAPHONE_HEY_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 36,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MEGAPHONE_HEY_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 36,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MEGAPHONE_HEY_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 36,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MEGAPHONE_PSST_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MEGAPHONE_PSST_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MEGAPHONE_PSST_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_AMMO_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_AMMO_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_AMMO_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_CLEAR_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_CLEAR_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_CLEAR_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_FOLLOW_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_FOLLOW_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_FOLLOW_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_HELP_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_HELP_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_HELP_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_RETREAT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_RETREAT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_RETREAT_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_STOP_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_STOP_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_STOP_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 18,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_WARNING_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_WARNING_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_MP_WARNING_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_NIGHT_STARTED_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_NIGHT_STARTED_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_NIGHT_STARTED_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_OTHER_PLAYER_SPOTTED_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_OTHER_PLAYER_SPOTTED_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_OTHER_PLAYER_SPOTTED_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_PAIN_HEAVY_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_PAIN_HEAVY_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_PAIN_LIGHT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_PAIN_LIGHT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_PANIC_HEAVY_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_PANIC_HEAVY_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_PANIC_LIGHT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_PANIC_LIGHT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_RARE_ITEM_FOUND_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_RARE_ITEM_FOUND_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_RARE_ITEM_FOUND_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_READING_START_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_READING_START_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_READING_START_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_RELOAD_START_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_RELOAD_START_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_RELOAD_START_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_SADNESS_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_SADNESS_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_SAFE_RELIEF_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_SAFE_RELIEF_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_SAFE_RELIEF_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_SICKNESS_HEAVY_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_SICKNESS_HEAVY_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_SICKNESS_LIGHT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_SICKNESS_LIGHT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_SUSPICIOUS_NOISE_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_SUSPICIOUS_NOISE_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_SUSPICIOUS_NOISE_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_THIRST_HEAVY_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_THIRST_HEAVY_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_THIRST_LIGHT_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_THIRST_LIGHT_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_TREATMENT_START_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_TREATMENT_START_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_TREATMENT_START_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_VEHICLE_REPAIR_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_VEHICLE_REPAIR_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_VEHICLE_REPAIR_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_WEATHER_BAD_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_WEATHER_BAD_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_WEATHER_BAD_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 8,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ZOMBIE_KILLED_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 14,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ZOMBIE_KILLED_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 14,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ZOMBIE_KILLED_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 14,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ZOMBIE_SPOTTED_HORDE_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ZOMBIE_SPOTTED_HORDE_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ZOMBIE_SPOTTED_HORDE_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 22,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ZOMBIE_SPOTTED_MEDIUM_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 14,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ZOMBIE_SPOTTED_MEDIUM_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 14,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ZOMBIE_SPOTTED_MEDIUM_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 14,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ZOMBIE_SPOTTED_SMALL_01
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ZOMBIE_SPOTTED_SMALL_02
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+    sound SVS_ZOMBIE_SPOTTED_SMALL_03
+    {
+        category = Voice,
+        is3D = true,
+        loop = false,
+        clip
+        {
+            file = media/sound/SaninkaVoiceSystem/_placeholder_silence.ogg,
+            distanceMin = 1,
+            distanceMax = 6,
+            volume = 1.0,
+        }
+    }
+
+}

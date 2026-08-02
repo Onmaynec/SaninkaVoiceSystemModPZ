@@ -1,0 +1,6 @@
+name=Saninka Voice System
+id=SaninkaVoiceSystem
+description=Atmospheric Russian prerecorded survivor voice and contextual reactions for Project Zomboid Build 42.
+poster=poster.png
+version=0.1.0-alpha
+versionMin=42.0
