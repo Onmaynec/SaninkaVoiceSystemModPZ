@@ -12,6 +12,21 @@ PARTS = ROOT / ".release" / "package"
 TAG = "v0.1.0-alpha"
 EXPECTED_SHA256 = "450f34092bf695ba77fcea475baaab03d773832df36703c7eb64ef2c582757dd"
 INSTALL_ZIP = ROOT / "dist" / f"SaninkaVoiceSystem-{TAG}.zip"
+CHUNK_HASHES = {
+    "part-000.b64": "aca6c01dd2a35242d6f6bd8ff14d9dc7bdc2a79389202730b3855c86fd9dbab2",
+    "part-001.b64": "4d57a73ff095d9c08ee750e2936e30f349b081923e7857b0c856dd538e268655",
+    "part-002.b64": "9e1873cc4ce5e342ccf9c5f12dfefa35d21e2ef3698efbdcae5cd124df140f7c",
+    "part-003.b64": "2c03d4ae44eaeeae08398abd9fe0b3049377048c2512a6ecc421a947db2ea38f",
+    "part-004.b64": "4d816de42612860e79abcf87f6fb43bf5b8dff4f8831fcaaa1078686178111b1",
+    "part-005.b64": "29cb8d95d64f7dc9b4d132e14635ac8f6f0e6e9db740a6506ddbfbfd74af9313",
+    "part-006.b64": "48c43f98cd18922faa4f98064145ccc68b8cf28e730b852e4b946aaab5cbadac",
+    "part-007.b64": "50c89ac739feee58d6899499bb7be5feb838eefd5173ef17b13fe98880f0a33f",
+    "part-008.b64": "168955f957dba711118dce9937e82e2c82a100f9cbd63f7b3f121594789446c0",
+    "part-009a.b64": "534df05b6af61cd2e6bc5ebdbffed6afacbd94cd8c92b578645e55d4f6910613",
+    "part-009b.b64": "8331bfbeff798e3cd878a34fa211f83e775b428e154836252371b89583507fb0",
+    "part-010.b64": "4b8f6e01fbfc326cac5a046f0c03de3ed41a550f23cb1419a138c6df6315cbff",
+    "part-011.b64": "ea3c485631e173ae7a3b74395cc0fcc5db55ccce91c7791d6babf598e16d27bd",
+}
 
 
 def run(*args: str) -> None:
@@ -19,17 +34,18 @@ def run(*args: str) -> None:
 
 
 def reconstruct_archive() -> bytes:
-    files = [PARTS / f"part-{index:03d}.b64" for index in range(12)]
-    missing = [str(path) for path in files if not path.is_file()]
-    if missing:
-        raise RuntimeError("Missing release parts: " + ", ".join(missing))
-    chunks = []
-    for path in files:
+    chunks: list[str] = []
+    for name, expected_hash in CHUNK_HASHES.items():
+        path = PARTS / name
+        if not path.is_file():
+            raise RuntimeError(f"Missing release part: {name}")
         chunk = path.read_text(encoding="utf-8").strip()
-        print(f"Using {path.name}: {len(chunk)} characters")
+        digest = hashlib.sha256(chunk.encode("utf-8")).hexdigest()
+        if digest != expected_hash:
+            raise RuntimeError(f"Corrupt release part {name}: {digest}")
+        print(f"Verified {name}: {len(chunk)} characters")
         chunks.append(chunk)
-    encoded = "".join(chunks)
-    raw = base64.b64decode(encoded, validate=True)
+    raw = base64.b64decode("".join(chunks), validate=True)
     digest = hashlib.sha256(raw).hexdigest()
     if digest != EXPECTED_SHA256:
         raise RuntimeError(f"Archive SHA-256 mismatch: {digest}")
