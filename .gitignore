@@ -1,0 +1,9 @@
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Raw recordings are supplied separately and can be very large.
+audio/raw/*.wav
+!audio/raw/.gitkeep
