@@ -1,0 +1,81 @@
+name: Bootstrap and publish v0.1.0-alpha
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "bootstrap/parts/**"
+      - ".github/workflows/bootstrap-release.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      TAG: v0.1.0-alpha
+      ZIP_SHA256: a6ac578ef25573386c9d6c319635abbe9e1ff7d3ce7736ebd09406a1a04f6c27
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Reassemble verified source
+        shell: bash
+        run: |
+          set -euxo pipefail
+          cat bootstrap/parts/*.b64 | base64 --decode > /tmp/svs-source.zip
+          echo "$ZIP_SHA256  /tmp/svs-source.zip" | sha256sum --check
+          unzip -o /tmp/svs-source.zip -d .
+          rm -rf bootstrap
+          rm -f .github/workflows/bootstrap-release.yml
+
+      - name: Generate and validate
+        shell: bash
+        run: |
+          set -euxo pipefail
+          python tools/generate_manifest.py
+          python tools/validate_project.py
+          python tools/build_release.py --version "$TAG"
+
+      - name: Commit project to main
+        shell: bash
+        run: |
+          set -euxo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Release Saninka Voice System v0.1.0-alpha"
+          git push origin HEAD:main
+
+      - name: Tag release commit
+        shell: bash
+        run: |
+          set -euxo pipefail
+          git tag -f -a "$TAG" -m "Saninka Voice System $TAG"
+          git push origin "refs/tags/$TAG" --force
+
+      - name: Create or update GitHub Release
+        shell: bash
+        run: |
+          set -euxo pipefail
+          RELEASE_ZIP="dist/SaninkaVoiceSystem-${TAG}.zip"
+          NOTES="docs/releases/${TAG}.md"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release edit "$TAG" \
+              --title "🎙️ Saninka Voice System ${TAG}" \
+              --notes-file "$NOTES" \
+              --prerelease
+            gh release upload "$TAG" "$RELEASE_ZIP" dist/SHA256SUMS.txt --clobber
+          else
+            gh release create "$TAG" "$RELEASE_ZIP" dist/SHA256SUMS.txt \
+              --title "🎙️ Saninka Voice System ${TAG}" \
+              --notes-file "$NOTES" \
+              --prerelease
+          fi
