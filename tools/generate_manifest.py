@@ -9,8 +9,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PARTS = ROOT / ".release" / "package"
-EXPECTED_SHA256 = "450f34092bf695ba77fcea475baaab03d773832df36703c7eb64ef2c582757dd"
 TAG = "v0.1.0-alpha"
+EXPECTED_SHA256 = "450f34092bf695ba77fcea475baaab03d773832df36703c7eb64ef2c582757dd"
 INSTALL_ZIP = ROOT / "dist" / f"SaninkaVoiceSystem-{TAG}.zip"
 
 
@@ -19,10 +19,16 @@ def run(*args: str) -> None:
 
 
 def reconstruct_archive() -> bytes:
-    files = sorted(PARTS.glob("part-*.b64"))
-    if not files:
-        raise RuntimeError("Release package parts were not found")
-    encoded = "".join(path.read_text(encoding="utf-8").strip() for path in files)
+    files = [PARTS / f"part-{index:03d}.b64" for index in range(12)]
+    missing = [str(path) for path in files if not path.is_file()]
+    if missing:
+        raise RuntimeError("Missing release parts: " + ", ".join(missing))
+    chunks = []
+    for path in files:
+        chunk = path.read_text(encoding="utf-8").strip()
+        print(f"Using {path.name}: {len(chunk)} characters")
+        chunks.append(chunk)
+    encoded = "".join(chunks)
     raw = base64.b64decode(encoded, validate=True)
     digest = hashlib.sha256(raw).hexdigest()
     if digest != EXPECTED_SHA256:
@@ -30,37 +36,37 @@ def reconstruct_archive() -> bytes:
     return raw
 
 
-def write_documentation() -> None:
+def write_project_files() -> None:
     readme = """# 🎙️ Saninka Voice System
 
 Русский голосовой мод для **Project Zomboid Build 42**.
 
-> Текущая версия: **v0.1.0-alpha** — технический каркас с бесшумными заглушками до добавления записанной озвучки.
+> **v0.1.0-alpha** — технический каркас с бесшумными заглушками до добавления записанной озвучки.
 
-## ✨ Что уже готово
+## ✨ Возможности
 
 - 🧠 74 контекстных игровых события;
 - 🎤 204 подготовленных аудиослота;
 - 🧟 реакции на зомби, орды и опасность;
-- ❤️ голод, жажда, боль, паника, усталость и другие состояния;
-- 🛠️ лечение, чтение, ремонт, строительство и прочие действия;
+- ❤️ состояния персонажа: голод, жажда, боль, паника и усталость;
+- 🛠️ реакции на лечение, чтение, ремонт и строительство;
 - 🌐 клиентская и серверная Lua-логика;
 - 🔊 приоритеты, cooldown, субтитры и пространственный звук;
 - 🔇 безопасный OGG-placeholder вместо отсутствующих записей.
 
 ## 📦 Установка
 
-1. Скачай ZIP из раздела **Releases**.
+1. Скачай ZIP в разделе **Releases**.
 2. Распакуй папку `Contents` в каталог Project Zomboid.
 3. Включи **Saninka Voice System** в меню модов.
 
-## 🎧 Добавление записей
+## 🎧 Запись озвучки
 
-Исходные WAV-файлы будут подключены в следующем релизе. Имена должны совпадать с манифестом в `SVS_Manifest.lua`.
+Имена будущих WAV-файлов берутся из `SVS_Manifest.lua`. Рекомендуемый формат: mono, 48 kHz, 24-bit PCM.
 
-## 🚧 Статус
+## ⚠️ Статус
 
-Это предварительная alpha-версия. Нативная регистрация отдельного Voice Style будет окончательно подключена после проверки схемы Build 42.20 и получения записанного аудиобанка.
+Реальные голосовые записи и окончательная регистрация отдельного Voice Style будут добавлены в следующих версиях.
 """
     notes = """# 🎙️ Saninka Voice System v0.1.0-alpha
 
@@ -71,35 +77,27 @@ def write_documentation() -> None:
 - 74 игровых события и 204 аудиослота;
 - клиентская, серверная и общая Lua-логика;
 - cooldown, приоритеты, субтитры и пространственный звук;
-- подготовленная структура для будущего аудиобанка;
-- бесшумный OGG-placeholder до добавления реальных записей.
+- подготовленная структура будущего аудиобанка;
+- бесшумный OGG-placeholder до добавления записей.
 
 ## ⚠️ Важно
 
-Реальные голосовые записи пока не включены. Это рабочий технический каркас для дальнейшего наполнения.
+Реальные голосовые записи пока не включены.
 """
     recording = """# 🎤 Руководство по записи
 
-Записывай файлы в WAV mono, 48 kHz, 24-bit PCM. Не добавляй музыку, реверберацию или эффект рации. Оставляй 100–200 мс тишины в начале и конце.
+Записывай в WAV mono, 48 kHz, 24-bit PCM. Не добавляй музыку, реверберацию или эффект рации. Оставляй 100–200 мс тишины в начале и конце.
 
-Имена файлов берутся из:
-
+Имена файлов находятся в:
 `Contents/mods/SaninkaVoiceSystem/42/media/lua/shared/SVS/SVS_Manifest.lua`
-
-Примеры:
-
-- `svs_zombie_spotted_horde_01.wav`
-- `svs_hunger_light_01.wav`
-- `svs_combat_hit_taken_heavy_03.wav`
 """
     architecture = """# 🧩 Архитектура
 
-- `SVS_Manifest.lua` — события, варианты, субтитры и имена аудиофайлов.
-- `SVS_ReactionEngine.lua` — определение игровых состояний и действий.
-- `SVS_Audio.lua` — очередь, приоритеты, cooldown и воспроизведение.
-- `SVS_Client.lua` — клиентская инициализация и сетевые команды.
-- `SVS_Server.lua` — серверная ретрансляция и ограничения.
-- `SVS_Sounds.txt` — регистрация звуковых событий Project Zomboid.
+- `SVS_Manifest.lua` — события, варианты, субтитры и имена файлов.
+- `SVS_ReactionEngine.lua` — игровые состояния и действия.
+- `SVS_Audio.lua` — очередь, приоритеты и воспроизведение.
+- `SVS_Client.lua` / `SVS_Server.lua` — клиент и мультиплеер.
+- `SVS_Sounds.txt` — регистрация звуков Project Zomboid.
 """
     (ROOT / "README.md").write_text(readme, encoding="utf-8")
     (ROOT / "RELEASE_NOTES.md").write_text(notes, encoding="utf-8")
@@ -109,35 +107,24 @@ def write_documentation() -> None:
     (docs / "RECORDING_GUIDE.md").write_text(recording, encoding="utf-8")
     (docs / "ARCHITECTURE.md").write_text(architecture, encoding="utf-8")
 
-
-def write_future_release_workflow() -> None:
-    workflow = """name: Validate release tags
-
+    workflows = ROOT / ".github" / "workflows"
+    workflows.mkdir(parents=True, exist_ok=True)
+    for path in workflows.glob("*.yml"):
+        path.unlink()
+    (workflows / "release.yml").write_text("""name: Validate release tags
 on:
   push:
-    tags:
-      - 'v*'
-
+    tags: ['v*']
 permissions:
   contents: read
-
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate project
-        run: python tools/validate_project.py
-      - name: Build archives
-        run: python tools/package_release.py
-"""
-    directory = ROOT / ".github" / "workflows"
-    directory.mkdir(parents=True, exist_ok=True)
-    for name in ("bootstrap.yml", "publish-on-trigger.yml", "publish-v0.1.0-alpha.yml", "trigger-test.yml"):
-        path = directory / name
-        if path.exists():
-            path.unlink()
-    (directory / "release.yml").write_text(workflow, encoding="utf-8")
+      - run: python tools/validate_project.py
+      - run: python tools/package_release.py
+""", encoding="utf-8")
 
 
 def main() -> None:
@@ -155,9 +142,7 @@ def main() -> None:
     trigger = ROOT / ".github" / "RELEASE_v0.1.0-alpha"
     if trigger.exists():
         trigger.unlink()
-
-    write_documentation()
-    write_future_release_workflow()
+    write_project_files()
 
     run("git", "config", "user.name", "github-actions[bot]")
     run("git", "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com")
@@ -166,7 +151,6 @@ def main() -> None:
     if status.stdout.strip():
         run("git", "commit", "-m", f"🎙️ Release Saninka Voice System {TAG}")
         run("git", "push", "origin", "HEAD:main")
-
     print(f"Prepared {INSTALL_ZIP.name}; SHA-256 {EXPECTED_SHA256}")
 
 
