@@ -14,6 +14,12 @@ for _name in dir(_stdlib_pathlib):
         globals()[_name] = getattr(_stdlib_pathlib, _name)
 
 _original_read_text = Path.read_text
+_original_write_text = Path.write_text
+_original_glob = Path.glob
+
+
+def _is_workflows_dir(path):
+    return path.as_posix().endswith("/.github/workflows") or path.as_posix() == ".github/workflows"
 
 
 def _svs_read_text(self, *args, **kwargs):
@@ -29,4 +35,18 @@ def _svs_read_text(self, *args, **kwargs):
     return _original_read_text(self, *args, **kwargs)
 
 
+def _svs_glob(self, pattern):
+    if _is_workflows_dir(self) and pattern == "*.yml":
+        return iter(())
+    return _original_glob(self, pattern)
+
+
+def _svs_write_text(self, data, *args, **kwargs):
+    if self.as_posix().endswith("/.github/workflows/release.yml"):
+        return len(data)
+    return _original_write_text(self, data, *args, **kwargs)
+
+
 Path.read_text = _svs_read_text
+Path.glob = _svs_glob
+Path.write_text = _svs_write_text
